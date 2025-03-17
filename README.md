@@ -1,5 +1,7 @@
 ﻿# Weather Forecast App
 
+Website live url - https://ashfaqmoho.github.io/weather-app/index-2.html
+
 ![image](https://github.com/user-attachments/assets/4f763dfc-b3df-4ed4-a076-32def5a7d9b1)
 
 ## Overview
