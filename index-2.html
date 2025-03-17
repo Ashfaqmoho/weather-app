@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Weather ForeCast App
+    </title>
+    <link rel="stylesheet" href="index-2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://icons.iconarchive.com/icons/iynque/ios7-style/512/Weather-icon.png" type="png">
+
+</head>
+
+<body>
+    <!--Main Background-->
+    <div class="main-background">
+        <!--Top Search bar and weather forecast header-->
+        <div class="top-part">
+            <div class="top-left">
+                <input id="search-box" type="search" placeholder="Enter a City  ex: London, Japan">
+                <button id="search-btn">
+                    <img class="search-img" src="Images/search_8094123.png" alt="search">
+                </button>
+                <div class="current"><button id="current-btn">Current Location</button></div>
+            </div>
+            <div class="top-right">
+                <p style="display: inline-block; margin-right: 40px;">Weather ForeCast</p>
+                <button class="theme">
+                    <img src="Images/moon_5945884.png" alt="theme" class="theme-img">
+                </button>
+            </div>
+        </div>
+        <!--Main Body-->
+        <div class="bottom-part">
+            <div class="body-left">
+                <div class="main">
+                    <div class="top-temp-txt">
+                        <p id="city-name">City Name</p>
+                        <p id="city-temp"> &#8451</p>
+                    </div>
+                    <div class="top-temp-img">
+                        <img src="Images/sun_869869.png" alt="sun" id="weather-img">
+                        <p id="current-date">Date</p>
+                    </div>
+                </div>
+                <!--All Weather Widgets-->
+                <div class="sub-main">
+                    <div class="today-fore">
+                        <div class="sub-head">
+                            <div class="icon">
+                                <img src="Icons/sun_10480654.png" alt="uv" class="uv-icon">
+                            </div>
+                            <div class="text">
+                                Feels Like
+                                <p id="feel-like" style="margin-left: 20px;">0 &#8451</p>
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <div class="icon">
+                                <img src="Icons/wind_8261584.png" alt="uv" class="uv-icon">
+                            </div>
+                            <div class="text">
+                                WIND
+                                <p id="wind-speed" style="margin-left: 20px;">0 m/s</p>
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <div class="icon">
+                                <img src="Icons/water_2792706.png" alt="uv" class="uv-icon">
+                            </div>
+                            <div class="text">
+                                HUMIDITY
+                                <p id="humidity-persentage">0 %</p>
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <div class="icon">
+                                <img src="Icons/eye_8214932.png" alt="uv" class="uv-icon">
+                            </div>
+                            <div class="text">
+                                VISIBILITY
+                                <p id="visibility-dist" style="margin-left: 20px;">0 Km</p>
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <div class="icon">
+                                <img src="Icons/rain_9831631.png" alt="uv" class="uv-icon">
+                            </div>
+                            <div class="text">
+                                Clouds
+                                <p id="cloud-type" style="margin-left: 25px;">cloud</p>
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <div class="icon">
+                                <img src="Icons/gauge_1077751.png" alt="uv" class="uv-icon">
+                            </div>
+                            <div class="text">
+                                PRESSURE
+                                <p id="pressure" style="margin-left: 20px;">0 hPa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--4 Day Weather Forecast-->
+            <div class="body-right">
+                <div style="margin-top: 0px; margin-bottom: 0px;">
+                    <p style="color: white; font-size: 22px; font-family: monospace; font-weight: bold;">4 Day Weather
+                        ForeCast</p>
+                </div>
+                <div class="day-forecast">
+                    <div class="day">
+                        <p id="get-date1">Today</p>
+                    </div>
+                    <div class="day-icon">
+                        <p id="get-icon">
+                            <img id="get-weather1" src="Images/sunny.png" alt="Sunny">
+                        </p>
+                    </div>
+                    <div class="day-like">
+                        <p id="get-feel1">Sunny</p>
+                    </div>
+                    <div class="day-temp">
+                        <p id="get-temp1">36</p>
+                    </div>
+                </div>
+                <div class="day-forecast">
+                    <div class="day">
+                        <p id="get-date2">Tue</p>
+                    </div>
+                    <div class="day-icon">
+                        <p id="get-icon">
+                            <img id="get-weather2" src="Images/sunny.png" alt="Sunny">
+                        </p>
+                    </div>
+                    <div class="day-like">
+                        <p id="get-feel2">Sunny</p>
+                    </div>
+                    <div class="day-temp">
+                        <p id="get-temp2">37</p>
+                    </div>
+                </div>
+                <div class="day-forecast">
+                    <div class="day">
+                        <p id="get-date3">Wed</p>
+                    </div>
+                    <div class="day-icon">
+                        <p id="get-icon">
+                            <img id="get-weather3" src="Images/sunny.png" alt="Sunny">
+                        </p>
+                    </div>
+                    <div class="day-like">
+                        <p id="get-feel3">Cloudy</p>
+                    </div>
+                    <div class="day-temp">
+                        <p id="get-temp3">35</p>
+                    </div>
+                </div>
+                <div class="day-forecast" style="border-bottom: none;">
+                    <div class="day">
+                        <p id="get-date4">Thu</p>
+                    </div>
+                    <div class="day-icon">
+                        <p id="get-icon">
+                            <img id="get-weather4" src="Images/sunny.png" alt="Sunny">
+                        </p>
+                    </div>
+                    <div class="day-like">
+                        <p id="get-feel4">Rainy</p>
+                    </div>
+                    <div class="day-temp">
+                        <p id="get-temp4">30</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Javascript File-->
+    <script src="index-2.js"></script>
+</body>
+
+</html>
